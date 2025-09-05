@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 import { Panel } from './components/Panel';
 import { TodoItem } from './components/TodoItem';
 import './App.css';
 
 function App() {
-  const [todos, setTodos] = useState(['리액트 기초 배우기', 'To-Do List 만들어보기']);
+  const [todos, setTodos] = useState([
+    { id: nanoid(), text: '리액트 기초 배우기', isDone: true },
+    { id: nanoid(), text: '컴포넌트 스타일링하기', isDone: false },
+  ]);
 
   const [inputText, setInputText] = useState('');
 
@@ -21,8 +25,23 @@ function App() {
 
   const handleAddTodo = () => {
     if (inputText.trim() === '') return;
-    setTodos((prev) => [...prev, inputText]);
+    const newTodo = {
+      id: nanoid(),
+      text: inputText,
+      completed: false,
+    };
+    setTodos((prev) => [...prev, newTodo]);
     setInputText('');
+  };
+
+  const handleDelete = (todoId) => {
+    setTodos((prev) => prev.filter((todo) => todo.id !== todoId));
+  };
+
+  const handleToogle = (todoId) => {
+    setTodos((prev) =>
+      prev.map((todo) => (todo.id === todoId ? { ...todo, isDone: !todo.isDone } : todo)),
+    );
   };
 
   return (
@@ -51,8 +70,8 @@ function App() {
           <p className="no-todos">할 일이 없습니다!</p>
         ) : (
           <ul className="todo-list">
-            {todos.map((text, index) => (
-              <TodoItem key={index} text={text} />
+            {todos.map((todo, index) => (
+              <TodoItem key={index} todo={todo} onToggle={handleToogle} onDelete={handleDelete} />
             ))}
           </ul>
         )}
