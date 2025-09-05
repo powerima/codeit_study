@@ -1,4 +1,5 @@
 import './App.css';
+import { Panel } from './components/Panel';
 import { TodoItem } from './components/TodoItem';
 
 function App() {
@@ -11,11 +12,13 @@ function App() {
         <h1 className="title">{title}</h1>
         <p className="today">오늘은 {new Date().toLocaleDateString()} 입니다.</p>
       </div>
-      <section className="input-section">
-        <input type="text" placeholder="새로운 할 일을 입력하세요" />
-        <button>추가</button>
-      </section>
-      <section className="list-section">
+      <Panel>
+        <div className="input-section">
+          <input type="text" placeholder="새로운 할 일을 입력하세요" />
+          <button>추가</button>
+        </div>
+      </Panel>
+      <Panel>
         {todos.length === 0 ? (
           <p className="no-todos">할 일이 없습니다!</p>
         ) : (
@@ -25,7 +28,7 @@ function App() {
             ))}
           </ul>
         )}
-      </section>
+      </Panel>
     </div>
   );
 }
