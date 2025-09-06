@@ -70,8 +70,8 @@ function App() {
           <p className="no-todos">할 일이 없습니다!</p>
         ) : (
           <ul className="todo-list">
-            {todos.map((todo, index) => (
-              <TodoItem key={index} todo={todo} onToggle={handleToogle} onDelete={handleDelete} />
+            {todos.map((todo) => (
+              <TodoItem key={todo.id} todo={todo} onToggle={handleToogle} onDelete={handleDelete} />
             ))}
           </ul>
         )}
