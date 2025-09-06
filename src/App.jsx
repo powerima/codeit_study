@@ -28,7 +28,7 @@ function App() {
     const newTodo = {
       id: nanoid(),
       text: inputText,
-      completed: false,
+      isDone: false,
     };
     setTodos((prev) => [...prev, newTodo]);
     setInputText('');
