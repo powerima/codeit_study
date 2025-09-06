@@ -1,4 +1,4 @@
-.app-container {
+.appContainer {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
@@ -6,7 +6,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.title-container {
+.titleContainer {
   display: flex;
   justify-content: space-between;
 }
@@ -26,19 +26,19 @@
   font-size: 16px;
 }
 
-.input-container {
+.inputContainer {
   display: flex;
   gap: 10px;
 }
 
-.todo-input {
+.todoInput {
   flex-grow: 1;
   padding: 10px;
   border: 1px solid #dee2e6;
   border-radius: 4px;
 }
 
-.add-button {
+.addButton {
   padding: 10px 20px;
   border: none;
   background-color: #007bff;
@@ -47,22 +47,13 @@
   cursor: pointer;
 }
 
-.no-todos {
+.empty {
   text-align: center;
   color: #868e96;
   font-size: 18px;
 }
 
-.list-section {
-  margin-top: 20px;
-}
-
-.todo-list {
+.todoList {
   list-style: none;
   padding: 0;
-}
-
-.todo-list li {
-  padding: 10px;
-  border-bottom: 1px solid #f1f3f5;
 }
