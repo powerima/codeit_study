@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import style from './TodoItem.module.css';
 import trashIcon from '../../assets/trash.svg';
 
@@ -5,7 +6,7 @@ export function TodoItem({ todo, onToggle, onDelete }) {
   return (
     <li className={style.todoItem}>
       <span
-        className={`${style.todoText} ${todo.isDone ? style.done : ''}`}
+        className={clsx(style.todoText, todo.isDone && style.done)}
         onClick={() => onToggle(todo.id)}
       >
         {todo.text}
