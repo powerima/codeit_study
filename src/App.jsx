@@ -9,10 +9,16 @@ const initialUsers = [
 
 function App() {
   const [users, setUsers] = useState(initialUsers);
+  const handleSortByName = () => {
+    // users.sort((a, b) => a.name.localeCompare(b.name)); // wrong
+    // const sortedUsers = [...users].sort((a, b) => a.name.localeCompare(b.name)); // good
+    setUsers((prev) => prev.toSorted((a, b) => a.name.localeCompare(b.name))); // best
+  };
   const handleDelete = (userId) => {};
   return (
     <div className={styles.appContainer}>
       <h1>유저 목록</h1>
+      <button onClick={handleSortByName}>이름 순 정렬</button>
       <ul className={styles.userList}>
         {users.map((user) => (
           <li key={user.id} className={styles.userItem}>
