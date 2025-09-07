@@ -14,7 +14,11 @@ function App() {
     // const sortedUsers = [...users].sort((a, b) => a.name.localeCompare(b.name)); // good
     setUsers((prev) => prev.toSorted((a, b) => a.name.localeCompare(b.name))); // best
   };
-  const handleDelete = (userId) => {};
+
+  const handleDelete = (userId) => {
+    setUsers((prev) => prev.filter((user) => user.id !== userId));
+  };
+
   return (
     <div className={styles.appContainer}>
       <h1>유저 목록</h1>
