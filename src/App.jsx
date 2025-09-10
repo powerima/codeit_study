@@ -1,9 +1,10 @@
 import { PostProvider } from '@/providers/PostProvider';
+import { Spinner } from './components/Spinner';
 
 function App() {
   return (
     <PostProvider>
-      <div>게시물 앱 준비 중...</div>
+      <Spinner />
     </PostProvider>
   );
 }
