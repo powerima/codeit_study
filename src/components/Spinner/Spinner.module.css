@@ -1,4 +1,4 @@
-@import './src/styles/animations/spin.css';
+@import '@/styles/animations/spin.css';
 
 .spinnerContainer {
   display: flex;
