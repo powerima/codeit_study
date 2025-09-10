@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PostList.module.css';
 import { Spinner } from '@/components/Spinner';
-import { PostCard } from '@/pages/HomePage/components/PostCard';
+import { PostCard } from '@/pages/HomePage/PostCard';
 import { Pagination } from '@/components/Pagination';
 import { usePosts } from '@/contexts/PostContext';
 
@@ -12,9 +12,9 @@ export function PostList() {
     error,
     currentPage,
     totalPages,
-    goToPage, // Renamed from handlePageChange
-    handleDelete, // Renamed from onDelete
-    handleUpdate, // Renamed from onUpdate
+    goToPage,
+    handleDelete,
+    handleUpdate,
   } = usePosts();
 
   if (isLoading) {
