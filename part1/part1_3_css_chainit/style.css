@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-image: url("bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 12px 40px 0;
+}
+
+.header-title-accent {
+  font-weight: 700;
+}
+
+.header-content {
+  width: 720px;
+  margin: 0 auto;
+  padding: 80px 0 280px;
+}
+
+.header-tagline-small {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8287a4;
+  margin: 0;
+}
+
+.header-tagline {
+    margin: 12px 0;
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header-description {
+  margin: 14px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8287a4;
+}
+
+.section {
+  padding: 74px 0 64px;
+}
+
+
+.section.dark {
+  background-color: #f1f4fa;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #161346;
+}
+
+.cover {
+  width: 100%;
+  margin: 42px 0 32px;
+  border-radius: 24px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c497b;
+  margin: 0;
+}
+
+.button-container {
+  text-align: center;
+  margin: 32px 0 0;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #413c91;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#career.section {
+  padding: 0;
+  background-color: #161346;
+}
+
+#career > .container {
+  padding: 40px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#career .title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#career .description {
+  margin: 8px 0 0;  
+  font-size: 16px;
+  font-weight: 400;
+  color: #8287a4;
+}
+
+.button.round {
+  margin: 32px auto 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #413c91;
+  border-radius: 9999px;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #120f3f;
+  padding: 32px 0;
+}
+
+.footer .container {
+  width: 720px;
+  margin: 0px auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d9d9d9;
+}
+
