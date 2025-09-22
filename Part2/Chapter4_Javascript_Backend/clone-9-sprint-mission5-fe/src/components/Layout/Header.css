@@ -1,0 +1,58 @@
+/*
+  09 sprint mission 5 fe 
+
+  Header.css
+
+  2025. 09. 22
+
+  clone coding
+
+*/
+
+
+/*  Mobile styles */
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  margin-right: 16px;
+}
+
+.globalHeader nav ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.globalHeader nav ul li a:hover {
+  color: var(--blue);
+}
+
+.loginLink {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 11.5px 23px;
+}
+
+
+
+/*  Tablet styles  */
+@media (min-width: 744px) {
+  .globalHeader nav ul {
+    gap: 36px;
+    font-size: 18px;
+  }
+}
+
+/*  Desktop styles */
+@media (min-width: 1200px) {
+  .headerLogo {
+    margin-right: 47px;
+  }
+}
