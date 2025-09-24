@@ -1,3 +1,17 @@
+/*
+  Part 2 - Chapter 1. React 
+  
+  codeit-fullstack-react-start
+
+  App.jsx
+
+  2025. 09. 24
+
+  clone coding
+  
+*/
+
+
 import './App.css';
 
 function App() {
