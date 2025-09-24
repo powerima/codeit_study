@@ -25,8 +25,16 @@
   --gray-50: #f7f7f8;
 
   /* Secondary color  */
+<<<<<<< HEAD
+  --Secondary-100: #f3f4f6;
+  --Secondary-400: #9ca3af;
   --Secondary-800: #1f2937;
 
+
+=======
+  --Secondary-800: #1f2937;
+
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
   /* Primary color */
   --blue: #3692ff;
 
@@ -114,6 +122,10 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+  cursor: pointer;
+=======
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 }
 
 .button:hover {
@@ -130,6 +142,21 @@ h1 {
   pointer-events: none;
 }
 
+<<<<<<< HEAD
+footer {
+  background-color: #111827;
+  color: #9ca3af;
+  font-size: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+=======
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 /*  Tablet styles  */
 @media (min-width: 744px) {
 

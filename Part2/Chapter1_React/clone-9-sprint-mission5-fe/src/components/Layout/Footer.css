@@ -1,0 +1,47 @@
+/*
+	09 sprint mission 5 fe 
+
+	Footer.css
+
+	2025. 09. 23
+
+	clone coding
+
+*/
+
+
+
+.copyright {
+	order: 3;
+	flex-basis: 100%;
+}
+
+.footerMenu {
+	display: flex;
+	gap: 30px;
+	color: var(--gray-200);
+}
+
+.socialMedia {
+	display: flex;
+	gap: 12px;
+}
+
+/*	Tablet styles	*/
+@media (min-width: 744px) {
+	footer {
+		padding: 32px 104px 108px 104px;
+	}
+
+	.copyright {
+		flex-basis: auto;
+		order: 0;
+	}
+}	
+
+/*	Desktop styles	*/
+@media (min-width: 1200px) {
+	footer {
+		padding: 32px 200px 108px 200px;
+	}
+}
