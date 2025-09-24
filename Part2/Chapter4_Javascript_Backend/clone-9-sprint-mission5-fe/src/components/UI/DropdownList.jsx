@@ -17,9 +17,6 @@ function DropdownList({ onSortSelection }) {
 
   const dropdownListToggle = () => {
     setIsDropdownVisible(!isDropdownVisible);
-    if(isDropdownVisible) {
-
-    }
   }
 
   return (
@@ -28,14 +25,15 @@ function DropdownList({ onSortSelection }) {
         <span>최신순</span>
         <img className="dropdownListButtonIcon"src="/src/assets/images/icons/ic_arrow_down.svg" />
       </button>
-      <div className="dropdownList">
+      {isDropdownVisible &&
+      (<div className="dropdownList">
         <div className="dropdownItem" onClick={() => onSortSelection("recent")}>
           최신순
         </div>
         <div className="dropdownItem" onClick={() => onSortSelection("favorite")}> 
           좋아요순
         </div>
-      </div>
+      </div>)}
     </div>
   );
 }

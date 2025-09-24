@@ -14,6 +14,7 @@ import Header from "./components/Layout/Header";
 import ItemCard from "/src/pages/MarketPage/components/ItemCard";
 import BestItemsSection from "/src/pages/MarketPage/components/BestItemsSection";
 import MarketPage from "/src/pages/MarketPage/MarketPage";
+import Footer from "./components/Layout/Footer";
 
 function App() {
 
@@ -24,8 +25,9 @@ function App() {
       <div className="withHeader">
         <MarketPage />
       </div>
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;

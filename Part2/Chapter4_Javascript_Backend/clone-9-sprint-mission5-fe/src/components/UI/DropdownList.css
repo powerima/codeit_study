@@ -18,18 +18,23 @@
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   gap: 24px;
-  margin-bottom: 8px;
+}
+
+.dropdownListButton:hover {
+  border: 1px solid var(--gray-400);
 }
 
 .dropdownList {
   position: absolute;
-  background: #ffffff;
+  background: #ffffff00;
+  margin-top: 8px;
   z-index: 99;
 }
 
 .dropdownItem {
   font-size: 16px;
   font-weight: 400;
+  background-color: #ffffff;
   color: var(--Secondary-800);
   width: 130px;
   height: 42px;  
@@ -56,6 +61,3 @@
 .dropdownItem:hover {  
   border: 1px solid var(--gray-400);
 }
-
-
-

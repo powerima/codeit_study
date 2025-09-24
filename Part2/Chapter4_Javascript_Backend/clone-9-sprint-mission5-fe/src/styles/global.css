@@ -25,7 +25,10 @@
   --gray-50: #f7f7f8;
 
   /* Secondary color  */
+  --Secondary-100: #f3f4f6;
+  --Secondary-400: #9ca3af;
   --Secondary-800: #1f2937;
+
 
   /* Primary color */
   --blue: #3692ff;
@@ -114,6 +117,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -128,6 +132,18 @@ h1 {
   background-color: #9ca3af;
   cursor: default;
   pointer-events: none;
+}
+
+footer {
+  background-color: #111827;
+  color: #9ca3af;
+  font-size: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 /*  Tablet styles  */
