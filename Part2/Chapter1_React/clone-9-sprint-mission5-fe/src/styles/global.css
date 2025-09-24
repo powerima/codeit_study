@@ -1,0 +1,165 @@
+/*
+  09 sprint mission 5 fe 
+
+  global.css
+
+  2025. 09. 22
+
+  clone coding
+
+*/
+
+
+
+/* Mobile styles */
+
+:root {
+  /* Gray scale */
+  --gray-900: #1b1d1f;
+  --gray-800: #26282b;
+  --gray-600: #454c53;
+  --gray-500: #72787f;
+  --gray-400: #9ea4a8;
+  --gray-200: #e5e7eb;
+  --gray-100: #e8ebed;
+  --gray-50: #f7f7f8;
+
+  /* Secondary color  */
+  --Secondary-100: #f3f4f6;
+  --Secondary-400: #9ca3af;
+  --Secondary-800: #1f2937;
+
+
+  /* Primary color */
+  --blue: #3692ff;
+
+  /* Layout dimensions */
+  --header-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+body {
+  color: #374151;
+  word-break: keep-all;
+  font-family: "Pretendard", sans-serif;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfdfdf;
+  z-index: 999;
+}
+
+.withHeader {
+  margin-top: var(--header-height);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.02;
+}
+
+.button {
+  background-color: var(--blue);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1967d6;  
+}
+
+.button:focus {
+  background-color: #1967d6;
+}
+
+.button:disabled {
+  background-color: #9ca3af;
+  cursor: default;
+  pointer-events: none;
+}
+
+footer {
+  background-color: #111827;
+  color: #9ca3af;
+  font-size: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/*  Tablet styles  */
+@media (min-width: 744px) {
+
+}
+
+
+/*  Desktop styles  */
+@media (min-width: 1200px) {
+  header {
+    padding: 0 200px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,63 @@
+/*
+  09 sprint mission 5 fe 
+
+  DropdownList.css
+
+  2025. 09. 22
+
+  clone coding
+
+*/
+
+.dropdownListButton {
+  width: 130px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  gap: 24px;
+}
+
+.dropdownListButton:hover {
+  border: 1px solid var(--gray-400);
+}
+
+.dropdownList {
+  position: absolute;
+  background: #ffffff00;
+  margin-top: 8px;
+  z-index: 99;
+}
+
+.dropdownItem {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: var(--Secondary-800);
+  width: 130px;
+  height: 42px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;  
+  border: 1px solid var(--gray-200);
+  border-bottom: 1px solid #ffffff;
+  
+}
+
+.dropdownItem:first-child {
+  border: 1px solid var(--gray-200);
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid #ffffff00;
+}
+
+.dropdownItem:last-child {
+  border-radius: 0 0 12px 12px;
+  border: 1px solid var(--gray-200);  
+}
+
+.dropdownItem:hover {  
+  border: 1px solid var(--gray-400);
+}
