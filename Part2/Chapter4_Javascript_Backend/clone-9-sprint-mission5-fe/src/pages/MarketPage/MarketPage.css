@@ -70,6 +70,7 @@
   padding-bottom: 24px;
 }
 
+<<<<<<< HEAD
 .allItemsCardSection {
   display: grid;
   grid-template-columns: repeat(2, 1ft);
@@ -122,6 +123,8 @@
   padding-top: 40px;
   padding-bottom: 80px;
 }
+=======
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 
 /*  Tablet styles */
 @media (min-width: 744px) {
@@ -130,6 +133,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
+<<<<<<< HEAD
   
   .allItemsSectionHeader {
     display: grid;
@@ -147,6 +151,12 @@
   .searchBarInput {
     width: 206px;
   }
+=======
+}
+
+@media (max-width: 1199px) {
+
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 }
 
 /*  Desktop Styles  */
@@ -155,6 +165,7 @@
   .bestItemsCardSection {
     grid-template-columns: repeat(4, 1fr);
   }
+<<<<<<< HEAD
 
   .allItemsCardSection {
     grid-template-columns: repeat(5, 1fr);
@@ -165,4 +176,6 @@
   .paginationBarWrapper {
     padding: 43px 0 120px;
   }
+=======
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 }

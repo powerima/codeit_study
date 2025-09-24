@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "/src/api/itemApi";
 import ItemCard from "./ItemCard";
 import DropdownList from "/src/components/UI/DropdownList";
+<<<<<<< HEAD
 import PaginationBar from "/src/components/UI/PaginationBar";
 
 const getPageSize = () => {
@@ -101,6 +102,13 @@ function AllItemsSection() {
       <div className="paginationBarWrapper">
         <PaginationBar totalPageNum={totalPageNum} activePageNum={page} onPageChange={onPageChange} />
       </div>
+=======
+
+function AllItemsSection() {
+  return (
+    <div>
+      <DropdownList />
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
     </div>
   )
 }

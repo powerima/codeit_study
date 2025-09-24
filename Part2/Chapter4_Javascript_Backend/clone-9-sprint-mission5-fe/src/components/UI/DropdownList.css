@@ -18,23 +18,34 @@
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   gap: 24px;
+<<<<<<< HEAD
 }
 
 .dropdownListButton:hover {
   border: 1px solid var(--gray-400);
+=======
+  margin-bottom: 8px;
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
 }
 
 .dropdownList {
   position: absolute;
+<<<<<<< HEAD
   background: #ffffff00;
   margin-top: 8px;
+=======
+  background: #ffffff;
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
   z-index: 99;
 }
 
 .dropdownItem {
   font-size: 16px;
   font-weight: 400;
+<<<<<<< HEAD
   background-color: #ffffff;
+=======
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
   color: var(--Secondary-800);
   width: 130px;
   height: 42px;  
@@ -61,3 +72,9 @@
 .dropdownItem:hover {  
   border: 1px solid var(--gray-400);
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> d5b1962a97bf7ff9e21975a404ce692e097fd633
