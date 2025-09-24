@@ -7,9 +7,24 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 } 
 
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   text-align: center;
   color: #323a40;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.today {
+  text-align: center;
+  color: #868e96;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .input-section {
@@ -33,6 +48,13 @@
   color: white;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.no-todos {
+  text-align: center;
+  color: #868e96;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .list-section {
