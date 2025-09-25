@@ -13,10 +13,11 @@
 
 
 import './App.css';
+import { TodoItem } from './components/TodoItem';
 
 function App() {
   const title = '오늘의 할 일';
-  const todos = [];
+  const todos = ['리액트 기초 배우기', 'To-Do List 만들어보기'];
 
   return (
     <div className="app-container">
@@ -33,10 +34,8 @@ function App() {
           <p className="no-todos">할 일이 없습니다!</p>
         ) : (
           <ul className="todo-list">
-            {todos.map((todo, index) => (
-              <li key={index} className="todo-item">
-                {todo}
-              </li>
+            {todos.map((text, index) => (
+              <TodoItem key={index} text={text} />
             ))}
           </ul>
         )}
