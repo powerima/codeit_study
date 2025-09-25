@@ -26,10 +26,6 @@
   justify-content: space-between;
 }
 
-.input-section {
-  display: flex;
-  gap: 10px;  
-}
 
 .title {
   text-align: center;
@@ -46,13 +42,12 @@
   font-size: 16px;
 }
 
-.input-section {
+.input-container {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 10px;  
 }
 
-.input-section input {
+.todo-input {
   flex-grow: 1;
   padding: 10px;
   border: 1px solid #dee2e6;
@@ -60,7 +55,7 @@
 }
 
 
-.input-section button {
+.add-button {
   padding: 10px 20px;
   border: none;
   background-color: #007bff;
@@ -73,10 +68,6 @@
   text-align: center;
   color: #868e96;
   font-size: 18px;
-  margin-top: 20px;
-}
-
-.list-section {
   margin-top: 20px;
 }
 
